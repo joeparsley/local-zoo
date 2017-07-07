@@ -5,8 +5,13 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <h1>List of animals currently in the zoo!</h1>
+  <select (change)='onChange($event.target.value)'>
+    <option value="allAnimals" selected="selected">All Animals </option>
+    <option value="youngAnimals">Young Animals</option>
+    <option value="olderAnimals">Older Animals</option>
+  </select>
   <ul>
-    <li *ngFor='let currentAnimal of childAnimalList'>
+    <li *ngFor='let currentAnimal of childAnimalList | animalFilter:filterByAge'>
     <h2>{{currentAnimal.name}}</h2>
     - Animal Sepcies: {{currentAnimal.species}}
     <br>
@@ -38,5 +43,11 @@ export class AnimalListComponent {
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
   }
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
+  }
+
+  filterByAge: string = 'allAnimals';
 
 }
