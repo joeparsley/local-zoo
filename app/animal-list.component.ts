@@ -6,10 +6,27 @@ import { Animal } from './animal.model';
   template: `
   <h1>hello did this work</h1>
   <ul>
-    <li *ngFor='let currentAnimal of childAnimalList'>{{currentAnimal.name}}, {{currentAnimal.species}}
-
+    <li *ngFor='let currentAnimal of childAnimalList'>
+    - Animal Sepcies: {{currentAnimal.species}}
+    <br>
+     - Animal Name: {{currentAnimal.name}}
+    <br>
+     - Animal Age: {{currentAnimal.age}}
+    <br>
+     - Animal Diet: {{currentAnimal.diet}}
+    <br>
+     - Animal Location: {{currentAnimal.location}}
+    <br>
+     - Animal CareTakers: {{currentAnimal.caretakers}}
+    <br>
+     - Animal Sex: {{currentAnimal.sex}}
+    <br>
+     - Animal Likes: {{currentAnimal.likes}}
+    <br>
+     - Animal Dislikes: {{currentAnimal.dislikes}}
+    <br>
     <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
-
+    <br>
     </li>
   </ul>
 
