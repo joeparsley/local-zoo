@@ -4,12 +4,11 @@ import { Animal } from './animal.model';
 @Component ({
   selector: 'animal-list',
   template: `
-  <h1>hello did this work</h1>
+  <h1>List of animals currently in the zoo!</h1>
   <ul>
     <li *ngFor='let currentAnimal of childAnimalList'>
+    <h2>{{currentAnimal.name}}</h2>
     - Animal Sepcies: {{currentAnimal.species}}
-    <br>
-     - Animal Name: {{currentAnimal.name}}
     <br>
      - Animal Age: {{currentAnimal.age}}
     <br>
@@ -29,7 +28,6 @@ import { Animal } from './animal.model';
     <br>
     </li>
   </ul>
-
   `
 })
 
