@@ -6,7 +6,7 @@
 
 ## Description
 
-* This is an Epicodus week #2 Independent Project Showcasing my Knowledge of Angular 2 after one week. 
+* This is an Epicodus week #2 Independent Project Showcasing my Knowledge of Angular 2 after one week.
 
 ## User Story:
 * As a user…
@@ -16,14 +16,33 @@
 * I want options to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older).
 * I want to click an animal to edit its name, age or caretakers.
 
+## Installation Requirements
 
-## Setup/Installation Requirements
+* You must install or have installed a current version of:
 
-* Clone the repository (https://github.com/joeparsley/local-zoo)
-* Run 'npm install' in your chosen terminal application
-* Run 'bower install' in your chosen terminal application
-* Run 'gulp serve' in your chosen terminal application, then wait for your browser to be opened to the appropriate page.
+  * [Node and npm](https://nodejs.org/en/)
 
+  * [TypeScript](https://www.typescriptlang.org/#download-links)
+
+## Setup
+
+* Clone this repository
+
+  `$ git clone https://github.com/joeparsley/local-zoo`
+
+
+* Run the following commands from the root directory:
+
+  `$ npm install`
+
+  `$ bower install`
+
+  This will download the project's dependencies
+
+
+* Run the command `$ gulp serve` to start the server.
+
+* Navigate to `localhost:3000` in your web browser to view the application.
 ## Known Bugs
 
 There are no known bugs at this time.
@@ -35,7 +54,7 @@ For feedback or support contact Joe Parsley at joewparsley@gmail.com
 ## Technologies Used
 
 * HTML
-* CSS
+* TypeScript
 * JavaScript
 * Angular 2
 * jQuery
