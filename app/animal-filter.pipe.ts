@@ -4,7 +4,6 @@ import {Animal} from './animal.model';
 @Pipe({
   name: 'animalFilter',
   pure: false
-
 })
 
 export class AnimalFilterPipe implements PipeTransform  {

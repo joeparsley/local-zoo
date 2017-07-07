@@ -7,7 +7,6 @@ import { EditAnimalComponent } from './edit-animal.component';
 import { NewAnimalComponent } from './new-animal.component';
 import { AnimalFilterPipe } from './animal-filter.pipe';
 
-
 @NgModule({
   imports: [BrowserModule,
               FormsModule ],

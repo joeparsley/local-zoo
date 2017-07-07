@@ -29,11 +29,11 @@ export class AppComponent {
   }
 
   editAnimal(clickedAnimal) {
-  this.selectedAnimal = clickedAnimal;
+    this.selectedAnimal = clickedAnimal;
   }
 
   addAnimal(newAnimalFromChild: Animal) {
-  this.masterAnimalList.push(newAnimalFromChild);
-}
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
 
 }
