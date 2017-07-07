@@ -47,15 +47,3 @@ export class EditAnimalComponent {
     this.doneButtonClickSender.emit();
   }
 }
-
-
-//
-// Species: "Arctic Fox"
-// Name: "Moon"
-// Age: 2
-// Diet: "Carnivore"
-// Location: "Northern Trail"
-// Caretakers: 5
-// Sex: "Female"
-// Likes: "Cool shade"
-// Dislikes: "Loud noises"
